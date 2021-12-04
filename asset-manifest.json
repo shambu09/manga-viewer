@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://shambu09.github.io/manga-viewer/static/css/main.f90fdbbf.chunk.css",
-    "main.js": "https://shambu09.github.io/manga-viewer/static/js/main.f4c36da0.chunk.js",
-    "main.js.map": "https://shambu09.github.io/manga-viewer/static/js/main.f4c36da0.chunk.js.map",
+    "main.js": "https://shambu09.github.io/manga-viewer/static/js/main.c0daf2d1.chunk.js",
+    "main.js.map": "https://shambu09.github.io/manga-viewer/static/js/main.c0daf2d1.chunk.js.map",
     "runtime-main.js": "https://shambu09.github.io/manga-viewer/static/js/runtime-main.905b9afc.js",
     "runtime-main.js.map": "https://shambu09.github.io/manga-viewer/static/js/runtime-main.905b9afc.js.map",
     "static/js/2.6333ed81.chunk.js": "https://shambu09.github.io/manga-viewer/static/js/2.6333ed81.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.905b9afc.js",
     "static/js/2.6333ed81.chunk.js",
     "static/css/main.f90fdbbf.chunk.css",
-    "static/js/main.f4c36da0.chunk.js"
+    "static/js/main.c0daf2d1.chunk.js"
   ]
 }
