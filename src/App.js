@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Content from "./pages/Content";
+import Viewer from "./pages/Viewer";
+import Chapters from "./pages/Chapters";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Switch>
+			<Route exact path="/" component={Content}></Route>
+			<Route exact path="/manga/:id" component={Chapters}></Route>
+			<Route exact path="/viewer/:id" component={Viewer}></Route>
+			<Route path="*">
+				<h1>404 Error</h1>
+			</Route>
+		</Switch>
+	);
 }
 
 export default App;
