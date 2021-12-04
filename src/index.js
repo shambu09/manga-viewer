@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Router>
+		<Router basename="/manga-viewer">
 			<App />
 		</Router>
 	</React.StrictMode>,
