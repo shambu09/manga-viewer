@@ -61,10 +61,13 @@
 }
 
 .image-container {
-	margin-top: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+.margin-yes{
 	margin-bottom: 60px;
+	margin-top: 20px;
 }
 
 .App-logo {

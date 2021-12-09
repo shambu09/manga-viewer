@@ -10,6 +10,7 @@ import { useLocation } from "react-router-dom";
 function Viewer(props) {
 	const { state } = useLocation();
 	const data = state.data;
+	const mode = data.type || "manga";
 	const id = state.id;
 	const [chapter, setChapter] = useState({
 		number: state.chapter,
@@ -40,7 +41,12 @@ function Viewer(props) {
 					data["chapters"][chapter.number]["images_links"]
 				).map((entry) => {
 					return (
-						<Image src={entry[1]} alt={entry[0]} key={entry[1]} />
+						<Image
+							tmp={mode === "manga" ? "margin-yes" : ""}
+							src={entry[1]}
+							alt={entry[0]}
+							key={entry[1]}
+						/>
 					);
 				})}
 			</>
