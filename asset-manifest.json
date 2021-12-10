@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://shambu09.github.io/manga-viewer/static/css/main.26f6cb44.chunk.css",
-    "main.js": "https://shambu09.github.io/manga-viewer/static/js/main.3f756d34.chunk.js",
-    "main.js.map": "https://shambu09.github.io/manga-viewer/static/js/main.3f756d34.chunk.js.map",
-    "runtime-main.js": "https://shambu09.github.io/manga-viewer/static/js/runtime-main.46c3aa1b.js",
-    "runtime-main.js.map": "https://shambu09.github.io/manga-viewer/static/js/runtime-main.46c3aa1b.js.map",
-    "static/js/2.77c04bca.chunk.js": "https://shambu09.github.io/manga-viewer/static/js/2.77c04bca.chunk.js",
-    "static/js/2.77c04bca.chunk.js.map": "https://shambu09.github.io/manga-viewer/static/js/2.77c04bca.chunk.js.map",
-    "static/js/3.df419004.chunk.js": "https://shambu09.github.io/manga-viewer/static/js/3.df419004.chunk.js",
-    "static/js/3.df419004.chunk.js.map": "https://shambu09.github.io/manga-viewer/static/js/3.df419004.chunk.js.map",
-    "index.html": "https://shambu09.github.io/manga-viewer/index.html",
-    "static/css/main.26f6cb44.chunk.css.map": "https://shambu09.github.io/manga-viewer/static/css/main.26f6cb44.chunk.css.map",
-    "static/js/2.77c04bca.chunk.js.LICENSE.txt": "https://shambu09.github.io/manga-viewer/static/js/2.77c04bca.chunk.js.LICENSE.txt"
+    "main.css": "/manga-viewer/static/css/main.77008fa9.chunk.css",
+    "main.js": "/manga-viewer/static/js/main.d2bf12f8.chunk.js",
+    "main.js.map": "/manga-viewer/static/js/main.d2bf12f8.chunk.js.map",
+    "runtime-main.js": "/manga-viewer/static/js/runtime-main.a761ba6f.js",
+    "runtime-main.js.map": "/manga-viewer/static/js/runtime-main.a761ba6f.js.map",
+    "static/js/2.b69f99ab.chunk.js": "/manga-viewer/static/js/2.b69f99ab.chunk.js",
+    "static/js/2.b69f99ab.chunk.js.map": "/manga-viewer/static/js/2.b69f99ab.chunk.js.map",
+    "static/js/3.f231538e.chunk.js": "/manga-viewer/static/js/3.f231538e.chunk.js",
+    "static/js/3.f231538e.chunk.js.map": "/manga-viewer/static/js/3.f231538e.chunk.js.map",
+    "index.html": "/manga-viewer/index.html",
+    "static/css/main.77008fa9.chunk.css.map": "/manga-viewer/static/css/main.77008fa9.chunk.css.map",
+    "static/js/2.b69f99ab.chunk.js.LICENSE.txt": "/manga-viewer/static/js/2.b69f99ab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.46c3aa1b.js",
-    "static/js/2.77c04bca.chunk.js",
-    "static/css/main.26f6cb44.chunk.css",
-    "static/js/main.3f756d34.chunk.js"
+    "static/js/runtime-main.a761ba6f.js",
+    "static/js/2.b69f99ab.chunk.js",
+    "static/css/main.77008fa9.chunk.css",
+    "static/js/main.d2bf12f8.chunk.js"
   ]
 }
