@@ -1,11 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useLocation, useParams } from "react-router";
+import { useParams } from "react-router";
 import { get_public_link } from "../utils";
 import { Link } from "react-router-dom";
 import Nav2 from "../components/Nav2";
 
-const fecth_data = (url, setMeta) => {
+import { useSelector, useDispatch } from "react-redux";
+import { setMeta } from "../actions";
+
+const fetch_data = (url, setMeta) => {
 	fetch(url)
 		.then((res) => {
 			return res.json();
@@ -16,22 +19,22 @@ const fecth_data = (url, setMeta) => {
 };
 
 function Chapters() {
-	const { state } = useLocation();
+	const dispatch = useDispatch();
+	const meta = useSelector((state) => state.chapterMeta);
+
 	const { id } = useParams();
-	const url = get_public_link(id);
-	const [data, setData] = useState({});
 	const [isLoading, setIsLoading] = useState(true);
 
-	const setMeta = (meta) => {
-		setData(meta);
+	const setMetadata = (meta) => {
+		dispatch(setMeta({ id, ...meta }));
 		setIsLoading(false);
 	};
 
 	useEffect(() => {
-		if (state) {
-			setMeta(state.data);
+		if (meta !== null && meta.id === id) {
+			setIsLoading(false);
 		} else {
-			fecth_data(url, setMeta);
+			fetch_data(get_public_link(id), setMetadata);
 		}
 		// eslint-disable-next-line
 	}, []);
@@ -41,7 +44,7 @@ function Chapters() {
 			<Nav2 />
 			{!isLoading && (
 				<>
-					{data["chapters"].map((entry, n) => {
+					{meta["chapters"].map((entry, i) => {
 						return (
 							<div
 								key={entry.title}
@@ -49,12 +52,7 @@ function Chapters() {
 							>
 								<Link
 									to={{
-										pathname: "/viewer/" + n,
-										state: {
-											data: data,
-											chapter: n,
-											id: id,
-										},
+										pathname: `/manga/${id}/viewer/${i}`,
 									}}
 								>
 									{entry.title}
