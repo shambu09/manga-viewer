@@ -5,6 +5,14 @@
 	width: fit-content;
 }
 
+.no-link {
+	border: none;
+}
+
+.no-link:hover{
+	border: none;
+}
+
 .links > a {
 	text-decoration: none;
 	color: #282c34;

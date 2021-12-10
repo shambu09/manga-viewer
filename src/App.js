@@ -10,7 +10,11 @@ function App() {
 		<Switch>
 			<Route exact path="/" component={Content}></Route>
 			<Route exact path="/manga/:id" component={Chapters}></Route>
-			<Route exact path="/viewer/:id" component={Viewer}></Route>
+			<Route
+				exact
+				path="/manga/:id/viewer/:chapter"
+				component={Viewer}
+			></Route>
 			<Route path="*">
 				<h1>404 Error</h1>
 			</Route>
