@@ -45,13 +45,16 @@
 	margin: auto;
 	margin-top: 50px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .index-element {
 	text-align: left;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	width: fit-content;
 }
+
 
 .index-element > a {
 	color: #282c34;

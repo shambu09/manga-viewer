@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { metadata_url } from "../utils";
-import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setIndex } from "../actions";
+import IndexNavbar from "../components/IndexNavbar";
 
 const fetch_data = (setData, setIsLoading) => {
 	fetch(metadata_url)
@@ -36,17 +36,7 @@ function Content() {
 
 	return (
 		<div className="chapter-index">
-			<h1>Content</h1>
-			<div>
-				{!isLoading &&
-					Object.entries(index).map(([key, value]) => {
-						return (
-							<div key={key} className="index-element">
-								<Link to={`/manga/${key}`}>{value}</Link>
-							</div>
-						);
-					})}
-			</div>
+			<IndexNavbar isLoading={isLoading} index={index} />
 		</div>
 	);
 }
