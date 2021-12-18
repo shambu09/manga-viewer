@@ -38,9 +38,14 @@ function RequestFrom() {
 		e.preventDefault();
 		if (
 			formData.url.length > 0 &&
+			formData.start !== "" &&
+			formData.end !== "" &&
 			!isNaN(formData.start) &&
 			!isNaN(formData.end)
 		) {
+			formData.start = parseInt(formData.start);
+			formData.end = parseInt(formData.end);
+
 			fetch(crawler_url, formatMetaData(formData))
 				.then((res) => {
 					return res.text();
@@ -55,12 +60,10 @@ function RequestFrom() {
 
 	const handleChange = (e) => {
 		let { name, value } = e.target;
+
 		if (e.target.name === "start" || e.target.name === "end") {
-			if (isNaN(value)) {
-				console.log(value);
-				value = 0;
-			} else {
-				value = parseInt(value);
+			if (value !== "-" && isNaN(value)) {
+				value = formData[name];
 			}
 		}
 		setFormData({
@@ -99,32 +102,38 @@ function RequestFrom() {
 					>
 						Start
 					</label>
-					<div className="col-sm-2">
+					<div className="col-sm-3">
 						<input
 							onChange={handleChange}
-							type="number"
+							type="text"
 							name="start"
 							className="form-control"
 							id="inputStart"
 							placeholder="Start"
 							value={formData.start}
 						/>
+						<small id="startHelp" className="form-text text-muted">
+							Start counts from zero
+						</small>
 					</div>
 				</div>
 				<div className="form-group row">
 					<label htmlFor="End" className="col-sm-2 col-form-label">
 						End
 					</label>
-					<div className="col-sm-2">
+					<div className="col-sm-3">
 						<input
 							onChange={handleChange}
-							type="number"
+							type="text"
 							name="end"
-							className="form-control validate"
+							className="form-control"
 							id="End"
 							placeholder="End"
 							value={formData.end}
 						/>
+						<small id="endHelp" className="form-text text-muted">
+							End can also be negative.
+						</small>
 					</div>
 				</div>
 				<fieldset className="form-group">
