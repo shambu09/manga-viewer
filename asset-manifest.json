@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/manga-viewer/static/css/main.77008fa9.chunk.css",
-    "main.js": "/manga-viewer/static/js/main.4eb0c32b.chunk.js",
-    "main.js.map": "/manga-viewer/static/js/main.4eb0c32b.chunk.js.map",
-    "runtime-main.js": "/manga-viewer/static/js/runtime-main.a761ba6f.js",
-    "runtime-main.js.map": "/manga-viewer/static/js/runtime-main.a761ba6f.js.map",
-    "static/js/2.a2ede03d.chunk.js": "/manga-viewer/static/js/2.a2ede03d.chunk.js",
-    "static/js/2.a2ede03d.chunk.js.map": "/manga-viewer/static/js/2.a2ede03d.chunk.js.map",
-    "static/js/3.f231538e.chunk.js": "/manga-viewer/static/js/3.f231538e.chunk.js",
-    "static/js/3.f231538e.chunk.js.map": "/manga-viewer/static/js/3.f231538e.chunk.js.map",
+    "main.css": "/manga-viewer/static/css/main.76395981.chunk.css",
+    "main.js": "/manga-viewer/static/js/main.97a148cd.chunk.js",
+    "main.js.map": "/manga-viewer/static/js/main.97a148cd.chunk.js.map",
+    "runtime-main.js": "/manga-viewer/static/js/runtime-main.fab76a39.js",
+    "runtime-main.js.map": "/manga-viewer/static/js/runtime-main.fab76a39.js.map",
+    "static/js/2.fb1ddc5e.chunk.js": "/manga-viewer/static/js/2.fb1ddc5e.chunk.js",
+    "static/js/2.fb1ddc5e.chunk.js.map": "/manga-viewer/static/js/2.fb1ddc5e.chunk.js.map",
+    "static/js/3.efabb8b0.chunk.js": "/manga-viewer/static/js/3.efabb8b0.chunk.js",
+    "static/js/3.efabb8b0.chunk.js.map": "/manga-viewer/static/js/3.efabb8b0.chunk.js.map",
     "index.html": "/manga-viewer/index.html",
-    "static/css/main.77008fa9.chunk.css.map": "/manga-viewer/static/css/main.77008fa9.chunk.css.map",
-    "static/js/2.a2ede03d.chunk.js.LICENSE.txt": "/manga-viewer/static/js/2.a2ede03d.chunk.js.LICENSE.txt"
+    "static/css/main.76395981.chunk.css.map": "/manga-viewer/static/css/main.76395981.chunk.css.map",
+    "static/js/2.fb1ddc5e.chunk.js.LICENSE.txt": "/manga-viewer/static/js/2.fb1ddc5e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a761ba6f.js",
-    "static/js/2.a2ede03d.chunk.js",
-    "static/css/main.77008fa9.chunk.css",
-    "static/js/main.4eb0c32b.chunk.js"
+    "static/js/runtime-main.fab76a39.js",
+    "static/js/2.fb1ddc5e.chunk.js",
+    "static/css/main.76395981.chunk.css",
+    "static/js/main.97a148cd.chunk.js"
   ]
 }
