@@ -93,6 +93,9 @@ function RequestFrom() {
 							name="url"
 							value={formData.url}
 						/>
+						<small id="urlHelp" className="form-text text-muted">
+							Source : readmanganato.com
+						</small>
 					</div>
 				</div>
 				<div className="form-group row">

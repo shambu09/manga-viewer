@@ -45,9 +45,15 @@ function IndexNavbar({ isLoading, index }) {
 					aria-labelledby="index-tab"
 				>
 					{isLoading ? (
-						<div class="spinner-border text-primary" role="status">
-							<span class="sr-only">Loading...</span>
-						</div>
+						<>
+							<p>Server might be hibernating, waking it up...</p>
+							<div
+								class="spinner-border text-primary"
+								role="status"
+							>
+								<span class="sr-only">Loading...</span>
+							</div>
+						</>
 					) : (
 						Object.entries(index).map(([key, value]) => {
 							return (
